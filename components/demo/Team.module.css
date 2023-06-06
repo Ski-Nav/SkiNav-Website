@@ -3,7 +3,7 @@
   font-weight: 200;
   line-height: 1.4;
   text-transform: uppercase;
-  color: #8840db;
+  color: #a4c2f4;
   padding-bottom: 20px;
 }
 
@@ -20,12 +20,10 @@
 }
 
 .title h2 {
-  font-size: 2.5rem;
+  font-size: 1.4rem;
+  color: #ffffff;
   font-weight: 300;
   line-height: 1.4;
-  text-transform: uppercase;
-  color: var(--dark-text);
-  margin: 1.5rem 0;
 }
 
 .title p {
@@ -75,14 +73,4 @@
 
 .images {
   height: 800px;
-}
-
-@media screen and (max-width: 600px) {
-  .demoContent {
-    flex-direction: column;
-  }
-  
-  .demoContent {
-  padding: 3rem 0;
-  }
 }

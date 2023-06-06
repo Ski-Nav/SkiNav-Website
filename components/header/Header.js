@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./Header.module.css";
 
-import AnimatedArrow from "../AnimatedArrow/AnimatedArrow";
 import iosdownload from "../../assets/iosdownload.webp";
 import androiddownload from "../../assets/androiddownload.webp";
 
@@ -22,48 +21,11 @@ const Header = () => {
           <div className={styles.headerLeft} data-aos="fade-right">
             <h1>
               <span className={styles.mainText}>
-                We make finding events easy
-              </span>
-              <span className={styles.subtitleText}>
-                By students. For students.
+                Imagine Google Maps for Ski Resorts
               </span>
             </h1>
 
-            <div className={styles.releaseText}>Download the app now!</div>
-            <div className={styles.headerCta}>
-              <div className={styles.headerDownloadButtons}>
-                <a
-                  href="https://momentevents.app/ios"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={iosdownload}
-                    alt="iOS Download"
-                    width="200"
-                    className={styles.headerDownloadButton}
-                  />
-                </a>
-              </div>
-              <div className={styles.headerDownloadButtons}>
-                <a
-                  href="https://momentevents.app/android"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={androiddownload}
-                    alt="Android Download"
-                    width="200"
-                    className={styles.headerDownloadButton}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.headerArrow}>
-            <AnimatedArrow />
+            <div className={styles.releaseText}>A ski slope navigator with accurate weather statistics, ski lift wait times, route recommendations, and much more</div>
           </div>
         </div>
       </div>

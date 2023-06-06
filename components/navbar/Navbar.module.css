@@ -17,8 +17,17 @@
   color: white;
 }
 
+.logoSki {
+  color: white;
+  font-weight: 800;
+}
+
+.logoNav {
+  color: #a4c2f4;
+}
+
 .navbar {
-  background: #000000;
+  background-color: rgb(29, 29, 29);
   height: 80px;
   display: flex;
   justify-content: center;    /* keep in center*/

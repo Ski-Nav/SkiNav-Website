@@ -13,18 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000000;
-  
-  /* background-size: cover; */
-  /* background-size:1500px; */
-  /* opacity: 0.2;
-  width: 100%;
-  height: auto;
-  background-size: 1500px; */
-}
-
-.features-background {
-  background: black
 }
 
 .header-bg::before {

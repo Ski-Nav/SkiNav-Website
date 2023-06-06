@@ -1,0 +1,1 @@
+lightBlue = "#a4c2f4"

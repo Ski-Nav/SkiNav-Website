@@ -39,10 +39,13 @@ const Navbar = () => {
       <div className={styles.navbarContainer}>
         <div className={styles.logo}>
           <div className={styles.logoContainer}>
-            <img src={logo} className={styles.logoText} height="40" alt="Logo" />
+            <h1>
+              <span className={styles.logoSki}>Ski</span>
+              <span className={styles.logoNav}>Nav</span>
+            </h1>
           </div>
         </div>
-        <div className={styles.navbarToggle} id="mobile-menu">
+        {/* <div className={styles.navbarToggle} id="mobile-menu">
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
@@ -71,12 +74,16 @@ const Navbar = () => {
                 className={styles.button}
                 id="temp-page"
               >
-                <img src={discord} className={styles.discordIcon} alt="discord" />
+                <img
+                  src={discord}
+                  className={styles.discordIcon}
+                  alt="discord"
+                />
                 Join our Discord!
               </a>
             </li>
           )}
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );
