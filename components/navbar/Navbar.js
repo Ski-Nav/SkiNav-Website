@@ -1,10 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { AiOutlineBars } from "react-icons/ai";
-import { RiCloseLine } from "react-icons/ri";
-import { SiGotomeeting } from "react-icons/si";
-import Button from "../UI/Button/Button";
-import logo from "../../assets/momentlogo.webp";
-import discord from "../../assets/discordicon.svg";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {

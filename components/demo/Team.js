@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import styles from "./Team.module.css";
 
-import kyle from "../../assets/mock-joined-events.webp";
-import brian from "../../assets/mock-search-events.webp";
-import troy from "../../assets/mock-hosted-events.webp";
+import kyle from "public/kyle.png";
+import brian from "public/brian.png";
+import troy from "public/troy.png";
+import Image from "next/image";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,6 +16,9 @@ const Team = () => {
     });
   }, []);
 
+  const width = 400;
+  const height = 400;
+
   return (
     <div>
       <section id={styles.demo}>
@@ -25,7 +29,7 @@ const Team = () => {
               data-aos="fade-right"
             >
               <h1>Brian</h1>
-              <img src={brian} alt="Brian" className={styles.images} />
+              <Image src={brian} alt="brian" layout="responsive" className={styles.images}/>
               <h2>Data Engineer / Snowboarder</h2>
             </div>
             <div
@@ -33,7 +37,8 @@ const Team = () => {
               data-aos="fade-up"
             >
               <h1>Kyle</h1>
-              <img src={kyle} alt="Kyle" className={styles.images} />
+              <Image src={kyle} alt="kyle" layout="responsive" className={styles.images}/>
+
               <h2>Mobile App Developer / Skier</h2>
             </div>
             <div
@@ -41,7 +46,7 @@ const Team = () => {
               data-aos="fade-left"
             >
               <h1>Troy</h1>
-              <img src={troy} alt="Troy" className={styles.images} />
+              <Image src={troy} alt="troy" layout="responsive" className={styles.images}/>
               <h2>Server Architect / Snowboarder</h2>
             </div>
           </div>

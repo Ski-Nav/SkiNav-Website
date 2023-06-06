@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import styles from "./Features.module.css";
 import { BsFillBookmarkStarFill } from "react-icons/bs";
-import viewEvents from "../../assets/mock-home-event-details.webp";
-import createEvents from "../../assets/mock-create-event.webp";
+import skiNavMobileApp from "public/skinavphonepics.png";
+import skiNavPipeline from "public/skinavcomputerpic.png";
+import Image from 'next/image'
 
 import Feature from "./Feature";
 import { FeatureListTop, FeatureListBot } from "./data";
@@ -22,7 +23,7 @@ const Features = () => {
         <div className={`${styles.container} ${styles.features}`}>
           <div className={styles.featuresContent}>
             <div className={styles.featuresLeft1} data-aos="fade-right">
-              <img src={viewEvents} alt="View Events" />
+              <Image src={skiNavMobileApp} alt="Ski Slope Navigation" layout="responsive"/>
             </div>
             <div className={styles.featuresRight1} data-aos="fade-left">
               {FeatureListTop.map((feature) => (
@@ -49,7 +50,7 @@ const Features = () => {
               ))}
             </div>
             <div className={styles.featuresRight2} data-aos="fade-left">
-              <img src={createEvents} alt="phone" />
+              <Image src={skiNavPipeline} alt="phone" layout="responsive"/>
             </div>
           </div>
         </div>

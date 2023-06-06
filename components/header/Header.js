@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./Header.module.css";
 
-import iosdownload from "../../assets/iosdownload.webp";
-import androiddownload from "../../assets/androiddownload.webp";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
