@@ -3,17 +3,12 @@ section#footer {
   color: #fff;
 }
 
-.footer {
+.container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   row-gap: 2rem;
   column-gap: 2rem;
 }
-
-/* .footer > * {
-  flex: 1;
-  justify-self: center;
-} */
 
 .footer h4 {
   font-size: 1.6rem;
@@ -23,18 +18,18 @@ section#footer {
   margin-bottom: 1rem;
 }
 
-.footer-box .footer-links a {
+.footerBox .footerLinks a {
   font-size: 1.2rem;
   margin: auto;
   text-align: right;
 }
 
-.footer-links {
+.footerLinks {
   display: flex;
   flex-direction: row;
 }
 
-.footer-contact p {
+.footerContact p {
   display: flex;
   align-items: center;
   margin-bottom: 5px;

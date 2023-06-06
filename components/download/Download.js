@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Download.css";
+import "./Download.module.css";
 import { FaApple, FaWindows } from "react-icons/fa";
 import { GrAndroid } from "react-icons/gr";
 import { IconContext } from "react-icons";

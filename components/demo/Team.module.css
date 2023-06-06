@@ -1,0 +1,88 @@
+.demo h1 {
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #8840db;
+  padding-bottom: 20px;
+}
+
+.demo h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--dark-text);
+  margin: 1.5rem 0;
+}
+
+.title p {
+  width: 50%;
+  min-width: 40rem;
+  margin: 0 auto;
+  color: var(--dark-text);
+}
+
+.demoContent {
+  display: flex;
+  justify-content: center;
+}
+
+.demoLeft {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.demoLeft img {
+  width: 100%;
+  padding: 20px;
+}
+
+.demoRight {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.demoRight img {
+  width: 100%;
+  padding: 20px;
+}
+
+.demoMiddle {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.demoMiddle img {
+  width: 100%;
+  padding: 20px;
+}
+
+.images {
+  height: 800px;
+}
+
+@media screen and (max-width: 600px) {
+  .demoContent {
+    flex-direction: column;
+  }
+  
+  .demoContent {
+  padding: 3rem 0;
+  }
+}

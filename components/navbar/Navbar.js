@@ -3,19 +3,25 @@ import { AiOutlineBars } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 import { SiGotomeeting } from "react-icons/si";
 import Button from "../UI/Button/Button";
-import "../UI/Button/Button.css";
 import logo from "../../assets/momentlogo.webp";
 import discord from "../../assets/discordicon.svg";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
 
-  function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-  }
   useEffect(() => {
+    setWidth(window.innerWidth); // Access window.innerWidth in the mounting phase
+
+    // Update the width on window resize
+    const handleWindowSizeChange = () => {
+      setWidth(window.innerWidth);
+    };
+
+    // Attach event listener for window resize
     window.addEventListener("resize", handleWindowSizeChange);
+
+    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleWindowSizeChange);
     };
@@ -27,62 +33,45 @@ const Navbar = () => {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   return (
-    // <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <div className="logo">
-          <div className="logo-container">
-            <img src={logo} className="logo-text" height="40" alt="Logo" />
+    <nav className={styles.navbar}>
+      <div className={styles.navbarContainer}>
+        <div className={styles.logo}>
+          <div className={styles.logoContainer}>
+            <img src={logo} className={styles.logoText} height="40" alt="Logo" />
           </div>
-          {/* <img src={logo} className="logo-text" alt="Logo" /> */}
         </div>
-        {/* <a href="#home" id="navbar__logo">CHIRAG</a> */}
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div className={styles.navbarToggle} id="mobile-menu">
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
         </div>
-        <ul class="navbar__menu">
-          {/* <li class="navbar__item">
-              <a href="#home" class="navbar__links" id="home-page">Home</a>
-          </li>
-          <li class="navbar__item">
-              <a href="#about" class="navbar__links" id="features-page">Features</a>
-          </li> */}
-          {/* <li class="navbar__item">
-              <a href="#skills" class="navbar__links" id="skills-page">Skills</a>
-          </li>
-          <li class="navbar__item">
-              <a href="#experiences" class="navbar__links" id="experiences-page">Experience</a>
-          </li>
-          <li class="navbar__item">
-              <a href="#cats" class="navbar__links" id="cat-page"><i class="fas fa-solid fa-cat"></i></a>
-          </li> */}
+        <ul className={styles.navbarMenu}>
           {isMobile ? (
-            <li class="navbar__btn">
+            <li className={styles.navbarBtn}>
               <a
                 href="https://momentevents.app/discord"
                 target="_blank"
-                class="button"
+                className={styles.button}
                 id="temp-page"
               >
                 <img
                   src={discord}
-                  className="discord-icon-mobile"
+                  className={styles.discordIconMobile}
                   alt="discord"
                 />
               </a>
             </li>
           ) : (
-            <li class="navbar__btn">
+            <li className={styles.navbarBtn}>
               <a
                 href="https://momentevents.app/discord"
                 target="_blank"
-                class="button"
+                className={styles.button}
                 id="temp-page"
               >
-                <img src={discord} className="discord-icon" alt="discord" />
+                <img src={discord} className={styles.discordIcon} alt="discord" />
                 Join our Discord!
               </a>
             </li>
@@ -90,49 +79,6 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
-    // <nav className="navbar container">
-    //   <div className="logo">
-    //     <SiGotomeeting color="#fff" size={33} />
-    //     <p className="logo-text">
-    //       Meet<span>U</span>
-    //     </p>
-    //   </div>
-    //   <menu>
-    //     <ul
-    //       className="nav-links"
-    //       id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
-    //     >
-    //       <li>
-    //         <a href="#">Home</a>
-    //       </li>
-    //       <li>
-    //         <a href="#features">Features</a>
-    //       </li>
-    //       <li>
-    //         <a href="#download">Download</a>
-    //       </li>
-    //       {/* <li> */}
-    //         {/* <a href="#subscribe">Subscribe</a>
-    //       </li>
-
-    //       <li>
-    //         <a href="#" className="btn btn-dark">
-    //           Get Started
-    //         </a>
-    //       </li>
-    //       <li className="nav-btn">
-    //         <Button text={"Learn More"} btnClass={"btn-dark"} href={"#faq"} />
-    //       </li> */}
-    //     </ul>
-    //   </menu>
-    //   <div className="menu-icons" onClick={toggleMenu}>
-    //     {showMenu ? (
-    //       <RiCloseLine color="#fff" size={30} />
-    //     ) : (
-    //       <AiOutlineBars color="#fff" size={27} />
-    //     )}
-    //   </div>
-    // </nav>
   );
 };
 

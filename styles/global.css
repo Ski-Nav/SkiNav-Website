@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    font-family: serif;
+  }
+
+:root {
+  --font-family: serif;
+  --dark-blue: #0a1930;
+  --light-blue: #1f93ff;
+
+  --color-white: #fff;
+  --dark-text: #333;
+  --form-button: #2da5ff;
+  --color-grey: #eae6eb;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p {
+    color: white
+}
+
+h3 {
+    color: white
+}
+
+h4 {
+    color: white
+}
+
+html {
+  font-size: 10px;
+}
+
+
+body {
+    justify-content: center;
+    background-color: white;
+  }
+  
+a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: all 0.3s;
+  }
+  a:hover,
+  #nav-links-mobile a:hover {
+    color: orangered;
+  }
+  a.btn {
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  a.btn-dark {
+    background: transparent;
+    border: 2px solid #fff;
+  }
+  a.btn-light {
+    background: orangered;
+    border: 2px solid transparent;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .btn {
+      display: inline;
+    }
+  }
+  
+  h1 span:nth-child(1) {
+    font-weight: 800;
+  }
+  
+  h1 span:nth-child(2),
+  h1 span:nth-child(3) {
+    font-weight: 100;
+  }

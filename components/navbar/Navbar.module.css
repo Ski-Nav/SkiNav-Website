@@ -5,13 +5,13 @@
   align-items: center;
 }
 
-.logo-container {
+.logoContainer {
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.logo-text {
+.logoText {
 
   justify-content: flex-start;
   color: white;
@@ -29,7 +29,7 @@
   z-index: 9990;   /* to make sure its always above the rest of the website*/
 }
 
-.navbar__container {
+.navbarContainer {
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -41,23 +41,22 @@
 }
 
 
-.navbar__menu {
-  /* font-family: 'Kumbh Sans', sans-serif; */
+.navbarMenu {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-.navbar__item a {
+.navbarItem a {
   font-size: 2rem;
 }
 
-.navbar__item {
+.navbarItem {
   color: #fff;
   height: 100px;
 }
 
-.navbar__links {
+.navbarLinks {
   color: #fff;
   display: flex;
   align-items: center;
@@ -68,7 +67,7 @@
   transition: all 0.3s ease;
 }
 
-.navbar__btn {
+.navbarBtn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,16 +116,16 @@
   width: 100%;
 } */
 
-.navbar__links:hover {
+.navbarLinks:hover {
   color: rgb(149, 68, 255);
   transition: all 0.5s ease;
 }
 
-.discord-icon {
+.discordIcon {
   height: 30px;
   margin-right: 10px;
 }
 
-.discord-icon-mobile{
+.discordIconMobile{
   height: 30px;
 }

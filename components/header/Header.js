@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import "./Header.css";
-// import Button from "../UI/Button/Button";
-import "../UI/Button/Button.css";
-// import { BsMouse } from "react-icons/bs";
+import styles from "./Header.module.css";
+
 import AnimatedArrow from "../AnimatedArrow/AnimatedArrow";
 import iosdownload from "../../assets/iosdownload.webp";
 import androiddownload from "../../assets/androiddownload.webp";
@@ -16,29 +14,38 @@ const Header = () => {
       duration: 1000,
     });
   }, []);
+
   return (
-    <section id="header">
-      <div className="container header">
-        <div className="aligning-contents-center">
-          <div className="header-left" data-aos="fade-right">
+    <section id={styles.header}>
+      <div className={`${styles.container} ${styles.header}`}>
+        <div className={styles.aligningContentsCenter}>
+          <div className={styles.headerLeft} data-aos="fade-right">
             <h1>
-              <span className="main-text">We make finding events easy</span>
-              <span className="subtitle-text">By students. For students.</span>
-              {/* <span>is a Lorem ipsum dolor sit amet, consectetur adipisicing</span> */}
+              <span className={styles.mainText}>
+                We make finding events easy
+              </span>
+              <span className={styles.subtitleText}>
+                By students. For students.
+              </span>
             </h1>
 
-            <div className="release-text">Download the app now!</div>
-            <div className="header-cta">
-              <div className="header-download-buttons">
+            <div className={styles.releaseText}>Download the app now!</div>
+            <div className={styles.headerCta}>
+              <div className={styles.headerDownloadButtons}>
                 <a
                   href="https://momentevents.app/ios"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={iosdownload} alt="iOS Download" width="200"></img>
+                  <img
+                    src={iosdownload}
+                    alt="iOS Download"
+                    width="200"
+                    className={styles.headerDownloadButton}
+                  />
                 </a>
               </div>
-              <div className="header-download-buttons">
+              <div className={styles.headerDownloadButtons}>
                 <a
                   href="https://momentevents.app/android"
                   target="_blank"
@@ -48,14 +55,15 @@ const Header = () => {
                     src={androiddownload}
                     alt="Android Download"
                     width="200"
+                    className={styles.headerDownloadButton}
                   />
                 </a>
               </div>
             </div>
           </div>
-          {/* lol ^*/}
-          <div className="header-arrow">
-            <AnimatedArrow></AnimatedArrow>
+
+          <div className={styles.headerArrow}>
+            <AnimatedArrow />
           </div>
         </div>
       </div>
