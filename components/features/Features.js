@@ -23,7 +23,7 @@ const Features = () => {
         <div className={`${styles.container} ${styles.features}`}>
           <div className={styles.featuresContent}>
             <div className={styles.featuresLeft1} data-aos="fade-right">
-              <Image src={skiNavMobileApp} alt="Ski Slope Navigation" layout="responsive"/>
+              <Image src={skiNavMobileApp} alt="Ski Slope Navigation" layout="responsive" loading="lazy"/>
             </div>
             <div className={styles.featuresRight1} data-aos="fade-left">
               {FeatureListTop.map((feature) => (
@@ -50,7 +50,7 @@ const Features = () => {
               ))}
             </div>
             <div className={styles.featuresRight2} data-aos="fade-left">
-              <Image src={skiNavPipeline} alt="phone" layout="responsive"/>
+              <Image src={skiNavPipeline} alt="phone" layout="responsive" loading="lazy"/>
             </div>
           </div>
         </div>

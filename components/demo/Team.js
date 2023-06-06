@@ -29,7 +29,7 @@ const Team = () => {
               data-aos="fade-right"
             >
               <h1>Brian</h1>
-              <Image src={brian} alt="brian" layout="responsive" className={styles.images}/>
+              <Image src={brian} alt="brian" layout="responsive" className={styles.images} loading="lazy" />
               <h2>Data Engineer / Snowboarder</h2>
             </div>
             <div
@@ -37,7 +37,7 @@ const Team = () => {
               data-aos="fade-up"
             >
               <h1>Kyle</h1>
-              <Image src={kyle} alt="kyle" layout="responsive" className={styles.images}/>
+              <Image src={kyle} alt="kyle" layout="responsive" className={styles.images} loading="lazy" />
 
               <h2>Mobile App Developer / Skier</h2>
             </div>
@@ -46,7 +46,7 @@ const Team = () => {
               data-aos="fade-left"
             >
               <h1>Troy</h1>
-              <Image src={troy} alt="troy" layout="responsive" className={styles.images}/>
+              <Image src={troy} alt="troy" layout="responsive" className={styles.images} loading="lazy"/>
               <h2>Server Architect / Snowboarder</h2>
             </div>
           </div>
